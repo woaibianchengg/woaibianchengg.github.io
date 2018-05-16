@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, World" />
+  <meta name="keywords" content="webpack,sass," />
 
 
 
@@ -79,13 +79,20 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Sakism的博客">
-<meta property="og:url" content="http://yoursite.com/tags/bootstrap/index.html">
+<meta name="description" content="#webpack加载sass配置如何在Webpack项目中使用sass呢？ 第一步：为了使用sass，我们需要安装sass的依赖包 npm install --save-dev sass-loader node-sass 使用样式的话，css-loader和style-loader也是必须的依赖包，所以webpack.config.js文件配置为12345678910111213141516171">
+<meta name="keywords" content="webpack,sass">
+<meta property="og:type" content="article">
+<meta property="og:title" content="webpack">
+<meta property="og:url" content="http://yoursite.com/2018/05/16/webpack/index.html">
 <meta property="og:site_name" content="Sakism的博客">
+<meta property="og:description" content="#webpack加载sass配置如何在Webpack项目中使用sass呢？ 第一步：为了使用sass，我们需要安装sass的依赖包 npm install --save-dev sass-loader node-sass 使用样式的话，css-loader和style-loader也是必须的依赖包，所以webpack.config.js文件配置为12345678910111213141516171">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2018/05/16/webpack/webpack.png">
+<meta property="og:updated_time" content="2018-05-16T04:23:19.524Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Sakism的博客">
+<meta name="twitter:title" content="webpack">
+<meta name="twitter:description" content="#webpack加载sass配置如何在Webpack项目中使用sass呢？ 第一步：为了使用sass，我们需要安装sass的依赖包 npm install --save-dev sass-loader node-sass 使用样式的话，css-loader和style-loader也是必须的依赖包，所以webpack.config.js文件配置为12345678910111213141516171">
+<meta name="twitter:image" content="http://yoursite.com/2018/05/16/webpack/webpack.png">
 
 
 
@@ -115,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/bootstrap/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/16/webpack/"/>
 
 
 
 
 
-  <title>标签: bootstrap | Sakism的博客</title>
+  <title>webpack | Sakism的博客</title>
   
 
 
@@ -140,7 +147,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -254,54 +261,164 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>bootstrap<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/16/webpack/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Sakism">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sakism的博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/05/02/tmall/" itemprop="url">
-              
-                <span itemprop="name">tmall</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">webpack</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-05-02T14:38:45+08:00"
-              content="2018-05-02" >
-          05-02
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-16T11:38:54+08:00">
+                2018-05-16
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/05/16/webpack/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/05/16/webpack/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>#webpack加载sass配置<br>如何在Webpack项目中使用sass呢？</p>
+<p>第一步：<br>为了使用sass，我们需要安装sass的依赖包</p>
+<p><code>npm install --save-dev sass-loader node-sass</code></p>
+<p>使用样式的话，css-loader和style-loader也是必须的依赖包，所以webpack.config.js文件配置为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">    module: &#123;</span><br><span class="line">        rules: [</span><br><span class="line">            &#123;</span><br><span class="line">                test: /\.css$/,</span><br><span class="line">                use: [</span><br><span class="line">                    &apos;style-loader&apos;,</span><br><span class="line">                    &apos;css-loader&apos; </span><br><span class="line">                ]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">            test: /\.(sass|scss)$/,</span><br><span class="line">                use: [</span><br><span class="line">                    &apos;style-loader&apos;,</span><br><span class="line">                    &apos;css-loader&apos;,</span><br><span class="line">                    &apos;sass-loader&apos; </span><br><span class="line">                ]</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><img src="/2018/05/16/webpack/webpack.png" alt="webpack"><br>此前在use下的loader:’style!css!sass’写法貌似在webpack4.x 版本中存在错误，所以要更正写法为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">use: [</span><br><span class="line">&apos;style-loader&apos;,</span><br><span class="line">&apos;css-loader&apos;,</span><br><span class="line">&apos;sass-loader&apos; </span><br><span class="line">]</span><br></pre></td></tr></table></figure></p>
+<p>或者<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">use:[</span><br><span class="line">    &#123;</span><br><span class="line">        loader:&quot;style-loader&quot;</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        loader:&quot;css-loader&quot;</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        loader:&quot;sass-loader&quot;</span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/webpack/" rel="tag"># webpack</a>
+          
+            <a href="/tags/sass/" rel="tag"># sass</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/09/zzc/" rel="next" title="zzc">
+                <i class="fa fa-chevron-left"></i> zzc
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -309,6 +426,18 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div onclick="showGitment()" id="gitment-display-button">显示 Gitment 评论</div>
+        <div id="gitment-container" style="display:none"></div>
+      
+    </div>
+
+  
+
+
 
         </div>
         
@@ -541,6 +670,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -587,6 +720,34 @@
 
     
 
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'woaibianchengg',
+            repo: 'woaibianchengg.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '67f250c17f9249ffc77fad856f5748a9e84a59ea',
+            
+                client_id: '0a0d1f5bd5d794d7c9d9'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      function showGitment(){
+        document.getElementById("gitment-display-button").style.display = "none";
+        document.getElementById("gitment-container").style.display = "block";
+        renderGitment();
+      }
+      
+      </script>
     
 
 
