@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="ajax,跨域," />
+  <meta name="keywords" content="html5,canvas," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="#vue proxyTable 接口跨域请求调试 本文部分内容摘自网络VUE2.0可以通过proxyTable解决:在 config/index.js 文件里面的proxyTable属性里面写入12345678&amp;apos;/apis&amp;apos;: &amp;#123;    // 测试环境    target: &amp;apos;https://goods.footer.com&amp;apos;,  // 接口域名">
-<meta name="keywords" content="ajax,跨域">
+<meta name="description" content="drawImage虽然名字看起来像是在画布Canvas上绘制图像，但是它还可以绘制视屏等。drawImage有三种不同的使用方式：　　drawImage(img,x,y);drawImage(img,x,y,width,height);drawImage(img,sx,sy,swidth,sheight,x,y,width,height);　　drawImage(img,x,y)：img指定图像，">
+<meta name="keywords" content="html5,canvas">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Vue 跨域请求">
-<meta property="og:url" content="http://yoursite.com/2018/05/16/跨域请求/index.html">
+<meta property="og:title" content="canvas">
+<meta property="og:url" content="http://yoursite.com/2018/05/26/canvas/index.html">
 <meta property="og:site_name" content="Sakism的博客">
-<meta property="og:description" content="#vue proxyTable 接口跨域请求调试 本文部分内容摘自网络VUE2.0可以通过proxyTable解决:在 config/index.js 文件里面的proxyTable属性里面写入12345678&amp;apos;/apis&amp;apos;: &amp;#123;    // 测试环境    target: &amp;apos;https://goods.footer.com&amp;apos;,  // 接口域名">
+<meta property="og:description" content="drawImage虽然名字看起来像是在画布Canvas上绘制图像，但是它还可以绘制视屏等。drawImage有三种不同的使用方式：　　drawImage(img,x,y);drawImage(img,x,y,width,height);drawImage(img,sx,sy,swidth,sheight,x,y,width,height);　　drawImage(img,x,y)：img指定图像，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-16T09:06:54.585Z">
+<meta property="og:updated_time" content="2018-05-26T15:51:05.679Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Vue 跨域请求">
-<meta name="twitter:description" content="#vue proxyTable 接口跨域请求调试 本文部分内容摘自网络VUE2.0可以通过proxyTable解决:在 config/index.js 文件里面的proxyTable属性里面写入12345678&amp;apos;/apis&amp;apos;: &amp;#123;    // 测试环境    target: &amp;apos;https://goods.footer.com&amp;apos;,  // 接口域名">
+<meta name="twitter:title" content="canvas">
+<meta name="twitter:description" content="drawImage虽然名字看起来像是在画布Canvas上绘制图像，但是它还可以绘制视屏等。drawImage有三种不同的使用方式：　　drawImage(img,x,y);drawImage(img,x,y,width,height);drawImage(img,sx,sy,swidth,sheight,x,y,width,height);　　drawImage(img,x,y)：img指定图像，">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/16/跨域请求/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/26/canvas/"/>
 
 
 
 
 
-  <title>Vue 跨域请求 | Sakism的博客</title>
+  <title>canvas | Sakism的博客</title>
   
 
 
@@ -273,7 +273,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/16/跨域请求/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/26/canvas/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Sakism">
@@ -290,7 +290,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Vue 跨域请求</h1>
+          <h1 class="post-title" itemprop="name headline">canvas</h1>
         
 
         <div class="post-meta">
@@ -302,8 +302,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-16T15:37:25+08:00">
-                2018-05-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-26T23:49:28+08:00">
+                2018-05-26
               </time>
             
 
@@ -321,8 +321,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/05/16/跨域请求/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/05/16/跨域请求/" itemprop="commentsCount"></span>
+                <a href="/2018/05/26/canvas/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/05/26/canvas/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -350,13 +350,7 @@
       
 
       
-        <p>#vue proxyTable 接口跨域请求调试</p>
-<p>本文部分内容摘自网络<br>VUE2.0可以通过proxyTable解决:<br>在 config/index.js 文件里面的proxyTable属性里面写入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&apos;/apis&apos;: &#123;</span><br><span class="line">    // 测试环境</span><br><span class="line">    target: &apos;https://goods.footer.com&apos;,  // 接口域名</span><br><span class="line">    changeOrigin: true,  //是否跨域</span><br><span class="line">    pathRewrite: &#123;</span><br><span class="line">    &apos;^/apis&apos;: &apos;&apos;   //需要rewrite重写的,</span><br><span class="line">    &#125;              </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>就可以完成跨域操作。</p>
-<p>附axios安装方式<br><code>cnpm install --save axios</code></p>
-<p>然后在main.js里面引入<br><code>import axios from &#39;axios&#39;</code><br><code>Vue.prototype.$axios = axios</code></p>
-<p>如果需要在Post基础上设置 token 或者头属性。<br>代码如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">axios.defaults.headers.common[&apos;token&apos;] = &quot;你的token&quot;</span><br><span class="line">axios.defaults.headers.post[&apos;Content-type&apos;] = &quot;属性&quot;</span><br></pre></td></tr></table></figure></p>
-<p>#axios提供了一下几种请求方式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">axios.request(config)</span><br><span class="line"></span><br><span class="line">axios.get(url[, config])</span><br><span class="line"></span><br><span class="line">axios.delete(url[, config])</span><br><span class="line"></span><br><span class="line">axios.head(url[, config])</span><br><span class="line"></span><br><span class="line">axios.post(url[, data[, config]])</span><br><span class="line"></span><br><span class="line">axios.put(url[, data[, config]])</span><br><span class="line"></span><br><span class="line">axios.patch(url[, data[, config]])</span><br></pre></td></tr></table></figure></p>
+        <p>drawImage虽然名字看起来像是在画布Canvas上绘制图像，但是它还可以绘制视屏等。<br>drawImage有三种不同的使用方式：<br>　　<br>drawImage(img,x,y);<br>drawImage(img,x,y,width,height);<br>drawImage(img,sx,sy,swidth,sheight,x,y,width,height);<br>　　<br>drawImage(img,x,y)：img指定图像，x和y指定图像在画布Canvas上的坐标。注意是相对于画布而言的，不是屏幕。<br>　　<br>drawImage(img,x,y,width,height)：width和height是指定图像的大小，通过指定该值可以将图像进行缩放和放大。<br>　　<br>drawImage(img,sx,sy,swidth,sheight,x,y,width,height)：使用该方法可以在图像上进行裁剪，并将裁剪的区域显示在指定的位置。其中sx和sy指定裁剪区域的起始坐标，该坐标是相对于图片的，不是画布。swidth和sheight是裁剪区域的大小。</p>
 
       
     </div>
@@ -374,9 +368,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/ajax/" rel="tag"># ajax</a>
+            <a href="/tags/html5/" rel="tag"># html5</a>
           
-            <a href="/tags/跨域/" rel="tag"># 跨域</a>
+            <a href="/tags/canvas/" rel="tag"># canvas</a>
           
         </div>
       
@@ -389,8 +383,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/16/webpack/" rel="next" title="webpack">
-                <i class="fa fa-chevron-left"></i> webpack
+              <a href="/2018/05/16/跨域请求/" rel="next" title="Vue 跨域请求">
+                <i class="fa fa-chevron-left"></i> Vue 跨域请求
               </a>
             
           </div>
@@ -398,10 +392,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/26/canvas/" rel="prev" title="canvas">
-                canvas <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
